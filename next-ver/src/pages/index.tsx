@@ -1,5 +1,5 @@
-import type { NextPage } from 'next'
 import { Typography } from '@mui/material'
+import type { NextPage } from 'next'
 
 import { MainVisual } from '@/components/MainVisual'
 import { EpochCard, PersonalHistory, WorkCard } from '@/components/personalHistory'

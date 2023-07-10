@@ -2,6 +2,8 @@ import { Box, Divider, Link, Stack } from '@mui/material'
 import type { MouseEventHandler } from 'react'
 import { Fragment } from 'react'
 
+import { TextAnimation } from './TextAnimation'
+
 export const MainVisual: React.FC<{
   listItems: Array<{ display: string; onClick?: MouseEventHandler<HTMLDivElement>; href?: string }>
 }> = ({ listItems }) => {
@@ -40,7 +42,7 @@ export const MainVisual: React.FC<{
                 ml: { lg: '-6px', sm: '-4px', xs: '-2px' },
               }}
             >
-              Ryota Sasaki
+              <TextAnimation>Ryota Sasaki</TextAnimation>
             </Box>
           </Box>
           <Box sx={{ fontSize: { lg: 26, md: 18, sm: 22 }, mb: '5px' }}>

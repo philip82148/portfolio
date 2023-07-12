@@ -19,5 +19,5 @@ export type TechType =
   | 'next'
   | 'nest'
 export const TechTag: React.FC<{ techType: TechType }> = ({ techType }) => {
-  return <Chip label={techType} sx={{ color: '#fff' }} />
+  return <Chip label={techType} sx={{}} />
 }

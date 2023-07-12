@@ -59,10 +59,10 @@ const theme = createTheme({
   },
   palette: {
     background: {
-      default: '#007a73',
+      default: '#fff',
     },
     text: {
-      primary: '#fff',
+      primary: '#333',
     },
   },
 })

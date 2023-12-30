@@ -1,8 +1,9 @@
 import type { TechType } from '../TechTag'
-import { useIsPC } from '../useIsPC'
 
 import { EpochCardPC } from './EpochCardPC'
 import { EpochCardSP } from './EpochCardSP'
+
+import { useIsPC } from '@/lib/useIsPC'
 
 export type EpochCardProps = {
   title: string

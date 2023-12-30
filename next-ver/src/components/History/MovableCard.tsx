@@ -43,7 +43,7 @@ export const MovableCard: React.FC<
 
   return (
     <Box sx={{ width: '100%', ...outerSx }}>
-      <Box ref={parentBoxRef} sx={{ width: '100%' }}>
+      <Box ref={parentBoxRef} sx={{ width: '100%', height: '100%' }}>
         <Box
           ref={childBoxRef}
           sx={{

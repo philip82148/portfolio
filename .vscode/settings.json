@@ -8,11 +8,14 @@
     "Closeds",
     "Kaku",
     "meibo",
+    "qiita",
     "Ryota",
     "Sasaki",
     "Sasaki's",
     "selva",
     "simplerich",
-    "Wantedly"
-  ]
+    "Wantedly",
+    "zenn"
+  ],
+  "errorLens.enabled": false
 }

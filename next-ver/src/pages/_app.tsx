@@ -2,7 +2,10 @@ import { ThemeProvider } from '@emotion/react'
 import { CssBaseline } from '@mui/material'
 import { createTheme } from '@mui/material/styles'
 import type { AppProps } from 'next/app'
+import { Dosis } from 'next/font/google'
 import Head from 'next/head'
+
+const h2Font = Dosis({ preload: false })
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (
   <>
@@ -63,17 +66,35 @@ const theme = createTheme({
       'sans-serif',
     ].join(','),
     h2: {
-      textAlign: 'center',
-      borderBottom: '2px solid #e5e5e5',
-      paddingBottom: 10,
-      margin: '0 140px 80px',
+      fontWeight: 700,
+      borderBottom: '3px solid #000',
+      padding: 3,
+      marginBottom: 40,
       fontSize: '2.8rem',
-      color: '#555',
+      color: '#000',
+      fontFamily: h2Font.style.fontFamily,
+      letterSpacing: 2,
+    },
+    h3: {
+      fontWeight: 700,
+      borderBottom: '3px solid #000',
+      padding: 3,
+      marginBottom: 40,
+      fontSize: '2.8rem',
+      color: '#000',
+      fontFamily: h2Font.style.fontFamily,
+      letterSpacing: 2,
     },
   },
   palette: {
     background: {
       default: '#fff',
+    },
+    primary: {
+      main: '#f7912b',
+    },
+    secondary: {
+      main: '#2AC7F7',
     },
     text: {
       primary: '#333',
